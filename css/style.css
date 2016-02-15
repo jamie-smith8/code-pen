@@ -1,0 +1,147 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  outline: 0px;
+}
+
+/* fast reset */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  background-color: #73dad2;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 70px 20% 0px 20%;
+}
+
+.nnwm {
+  padding-top: 10rem;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#head {
+  margin-top: 20px;
+}
+
+#menu .box {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  width: 11rem;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #e6e6e6;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu ul {
+  position: relative;
+  top: 10%;
+  transform: scale(2);
+  transition: all 0.3s ease-in-out;
+}
+
+#menu li {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#menu li a {
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle-nav-label {
+  color: #fff;
+  background: #005352;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 500;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#menu li a:hover {
+  background-color: #005352;
+  color: #fff;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+#menu li a i {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+#toggle-nav {
+  display: none;
+}
+
+#toggle-nav:checked ~ .box {
+  opacity: 1;
+  z-index: 400;
+}
+
+#toggle-nav:checked ~ .box ul {
+  transform: scale(1);
+}
+
+#toggle-nav:checked ~ #toggle-nav-label {
+  background: #fdc46e;
+  color: #005352;
+  font-weight: 700;
+}
+
+#toggle-nav:checked ~ #toggle-nav-label .plus {
+  transform: rotate(45deg);
+}
+
+#content {
+  margin: 0px 0px 20px 0px;
+  height: 100vh;
+  background-color: #e6e6e6;
+}
+
+#content h1 {
+  margin-top: 40px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#content p {
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
